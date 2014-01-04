@@ -1,8 +1,8 @@
 # OpenShift Wildfly Cartridge
 
-This cartridge is running Wildfly 8.0.0.CR1
+This cartridge is running JBoss 7.2.0.Final
 
-This cartridge is based on the JBoss AS cartridge found in OpenShift Origin [here](https://github.com/openshift/origin-server/tree/master/cartridges/openshift-origin-cartridge-jbossas).  
+This cartridge is based on the JBoss AS cartridge found in OpenShift Origin [here](https://github.com/cwpenhale/openshift-jboss720-cartridge).  
 
 Pretty much everything seems to be working fine, but it can still use some testing.  
 
@@ -15,7 +15,7 @@ You can also remove the pom.xml and /src directories and place a war file in the
 
 You can build a gear using this cartridge with the following command:
 
-	rhc app create wildfly https://raw.github.com/developercorey/openshift-wildfly-cartridge/master/metadata/manifest.yml
+	rhc app create jboss720 https://raw.github.com/developercorey/openshift-wildfly-cartridge/master/metadata/manifest.yml
 	
 It will take a few minutes to build, so be patient.
 
@@ -42,9 +42,6 @@ $OPENSHIFT_WILDFLY_PASSWORD
 In this example you would visit 127.0.0.1:9990 to view the wildfly admin panel from your local computer.
 
 ## Thanks to the following:
-Stian Thorgersen for this blog article that helped me get going!
-https://community.jboss.org/people/stianst/blog/2013/06/13/run-wildfly-on-openshift-using-the-diy-cartridge
-
-Also thanks to the OpenShift team, and the users on the #wildfly channel on Freenode for helping answer my questions and help me troubleshoot inter-gear management connection issues.
+@developercorey: https://github.com/developercorey
 
 
